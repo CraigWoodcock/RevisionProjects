@@ -4,25 +4,25 @@ public class EncodedMessage {
 
     public static void main(String[] args) {
 
-        System.out.println(encode("zzzzzzzzzzzz"));
+        System.out.println(encode("aabhheettr"));
 
     }
 
     private static String encode(String plainText){
 
-         char[] plainTextToArray = plainText.toCharArray();
+         char[] charArray = plainText.toCharArray();
 
-        int currentChar = 1;
+        int counter = 1;
 
         StringBuilder sb = new StringBuilder();
 
-        for (int i=0; i < plainTextToArray.length; i++){
-            if(i +1 < plainTextToArray.length && plainTextToArray[i]==plainTextToArray[i+1]){
-                currentChar ++;
+        for (int i=0; i < charArray.length; i++){
+            if(i +1 < charArray.length && charArray[i]==charArray[i+1]){
+                counter ++;
             }else{
-                sb.append(currentChar);
-                sb.append(plainTextToArray[i]);
-                currentChar = 1;
+                sb.append(counter);
+                sb.append(charArray[i]);
+                counter = 1;
             }
         }
         return sb.toString();
