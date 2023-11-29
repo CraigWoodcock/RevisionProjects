@@ -13,7 +13,7 @@ public class SecondLargestNumber {
         int secondLargestNum = numArray[arraySize-2];
 
         System.out.println("The largest number in the array is : " + largestNum);
-        System.out.println("The second argest number in the array is : " + secondLargestNum);
+        System.out.println("The second Largest number in the array is : " + secondLargestNum);
 
     }
 }
