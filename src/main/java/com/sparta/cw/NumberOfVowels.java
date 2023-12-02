@@ -14,9 +14,6 @@ public class NumberOfVowels
                 }
             }
         }
-
-//        numberOfVowels = getNumberOfVowels(numberOfVowels, letter);
-
         return numberOfVowels;
     }
 
